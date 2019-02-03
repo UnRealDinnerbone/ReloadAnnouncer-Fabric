@@ -1,0 +1,10 @@
+{
+  "id": "reloadannouncer",
+  "name": "Reload Announcer",
+  "version": "1.0.0",
+  "side": "universal",
+  "initializer": "com.unrealdinnerbone.reloadannouncer.ReloadAnnouncer",
+  "mixins": {
+    "common": "reloadannouncer.common.json"
+  }
+}
