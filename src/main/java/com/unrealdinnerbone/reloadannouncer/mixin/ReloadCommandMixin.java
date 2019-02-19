@@ -26,4 +26,9 @@ public abstract class ReloadCommandMixin
         MessageUtils.sendAllPlayersMessage(playerManager, "reloadannouncer.datapacks.reloadedEnd");
     }
 
+    @Inject(method = "reloadDataPacks(Lnet/minecraft/world/level/LevelProperties;)V", at = @At(value = "INVOKE", target = "Ljava/util/Iterator;hasNext()Z"))
+    private void onStufF(CallbackInfo callbackInfo) {
+
+    }
+
 }
