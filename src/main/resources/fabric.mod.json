@@ -1,10 +1,28 @@
 {
+  "schemaVersion": 1,
   "id": "reloadannouncer",
-  "name": "Reload Announcer",
   "version": "1.0.0",
-  "side": "universal",
-  "initializer": "com.unrealdinnerbone.reloadannouncer.ReloadAnnouncer",
-  "mixins": {
-    "common": "reloadannouncer.common.json"
+  "name": "Reload Announcer",
+  "description": "Sends a chat message when after reloading",
+  "authors": [
+    "UnRealDinnerbone",
+    "manmaed"
+  ],
+  "icon": "assets/reloadannouncer/logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.unrealdinnerbone.reloadannouncer.ReloadAnnouncer"
+    ]
+  },
+  "mixins": [
+    {
+      "environment": "*",
+      "config": "reloadannouncer.common.json"
+    }
+  ],
+  "requires": {
+    "fabricloader": "=>0.4.0",
+    "fabric": "*"
   }
 }

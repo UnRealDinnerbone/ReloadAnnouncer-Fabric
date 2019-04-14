@@ -10,11 +10,8 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(MinecraftServer.class)
-public abstract class ReloadCommandMixin
-{
+public abstract class ReloadCommandMixin {
     @Shadow private PlayerManager playerManager;
-
-    @Shadow public abstract void log(String string_1);
 
     @Inject(method = "reload", at = @At("HEAD"))
     private void onRegisterStart(CallbackInfo info) {
@@ -25,10 +22,6 @@ public abstract class ReloadCommandMixin
     private void onRegisterEnd(CallbackInfo info) {
         MessageUtils.sendAllPlayersMessage(playerManager, "reloadannouncer.datapacks.reloadedEnd");
     }
-
-    @Inject(method = "reloadDataPacks(Lnet/minecraft/world/level/LevelProperties;)V", at = @At(value = "INVOKE", target = "Ljava/util/Iterator;hasNext()Z"))
-    private void onStufF(CallbackInfo callbackInfo) {
-
-    }
-
 }
+
+
