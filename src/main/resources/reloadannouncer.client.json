@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.unrealdinnerbone.reloadannouncer.mixin",
+  "package": "com.unrealdinnerbone.reloadannouncer.client.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ReloadCommandMixin"

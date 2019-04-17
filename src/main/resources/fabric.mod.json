@@ -11,14 +11,14 @@
   "icon": "assets/reloadannouncer/logo.png",
   "environment": "*",
   "entrypoints": {
-    "main": [
+    "client": [
       "com.unrealdinnerbone.reloadannouncer.ReloadAnnouncer"
     ]
   },
   "mixins": [
     {
-      "environment": "*",
-      "config": "reloadannouncer.common.json"
+      "environment": "client",
+      "config": "reloadannouncer.client.json"
     }
   ],
   "requires": {
