@@ -20,9 +20,5 @@
       "environment": "client",
       "config": "reloadannouncer.client.json"
     }
-  ],
-  "requires": {
-    "fabricloader": "=>0.4.0",
-    "fabric": "*"
-  }
+  ]
 }
