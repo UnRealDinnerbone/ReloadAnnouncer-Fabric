@@ -24,6 +24,5 @@ public class ReloadAnnouncer implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         LOGGER.info("[Reload Announcer Client] Loading!");
-        SharedConstants.isDevelopment = true;
     }
 }
