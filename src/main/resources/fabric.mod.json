@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "reloadannouncer",
-  "version": "1.0.0",
+  "version": "${version}",
   "name": "Reload Announcer",
   "description": "Sends a chat message when after reloading",
   "authors": [
