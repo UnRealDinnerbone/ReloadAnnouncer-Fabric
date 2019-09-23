@@ -22,10 +22,9 @@ apply from: 'https://raw.githubusercontent.com/MinecraftModDevelopment/Gradle-Co
 
 def ENV = System.getenv()
 def buildNumber = ENV.BUILD_NUMBER ? "${ENV.BUILD_NUMBER}" : "0"
-version = "${mod_version}+build." + buildNumber
+version = "${mod_version}+build." + buildNumber + ".minecraft." + "${minecraft_version}"
 
 archivesBaseName = "${mod_name}-Fabric-" + "${minecraft_version}"
-
 
 
 processResources {
